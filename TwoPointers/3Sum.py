@@ -20,6 +20,7 @@ class Solution:
             if nums[i] > 0:
                 break
 
+            # compare i and i-1 for record the situation of i-1 when first round i=i-1
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
             l, r = i + 1, len(nums) - 1
@@ -39,6 +40,7 @@ class Solution:
                     res.append([nums[i], nums[l], nums[r]])
                     l += 1
                     r -= 1
+                    # compare l and l-1 for record the situation of l-1 when first round l=l-1
                     while l < r and nums[l] == nums[l - 1]:
                         l += 1
                     while l < r and nums[r] == nums[r + 1]:
