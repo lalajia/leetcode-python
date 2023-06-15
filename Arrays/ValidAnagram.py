@@ -1,3 +1,4 @@
+# 用dict记录每一个字母是否出现，之后对比这两个dict如果一样就True
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):

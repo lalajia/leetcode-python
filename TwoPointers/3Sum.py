@@ -8,6 +8,7 @@ Output: [[-1,-1,2],[-1,0,1]]
 from typing import List
 
 
+# 首先要sort之后two pointer。为避免重复，在于要让每一个重复的数第一次记录，之后全跳过【i-1】
 class Solution:
     def threeSum(self, nums: List[int]) -> List[int]:
         # sort() will return None

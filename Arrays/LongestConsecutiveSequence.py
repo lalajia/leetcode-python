@@ -9,6 +9,7 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 from typing import List
 
 
+# 先找到起始点，（num-1）不在set里，之后while loop找每一个加一的数是否存在
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         # use set to save time

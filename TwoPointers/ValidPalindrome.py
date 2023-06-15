@@ -7,6 +7,7 @@ Explanation: "amanaplanacanalpanama" is a palindrome.
 """
 
 
+# 主要是isalnum()针对string 和 character对于非字母和数字的检测
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         temp = s.lower()

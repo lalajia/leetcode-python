@@ -11,6 +11,7 @@ Output: true
 """
 
 
+# 主要要有map对应起来所有的括号，之后遍历input来确定是否每一个左括号都有对应的右括号
 class Solution:
     def isValid(self, s: str) -> bool:
         if len(s) % 2 != 0:

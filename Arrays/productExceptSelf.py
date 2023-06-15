@@ -11,6 +11,7 @@ Output: [24,12,8,6]
 from typing import List
 
 
+# 从左到num x 从右到num
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         left, right = [1] * len(nums), [1] * len(nums)

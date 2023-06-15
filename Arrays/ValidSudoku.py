@@ -23,6 +23,7 @@ import collections
 from typing import List
 
 
+# 创建一个和原本board一样的 然后用set横着比，竖着比，square 的比
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         horizental = [set() for _ in range(9)]

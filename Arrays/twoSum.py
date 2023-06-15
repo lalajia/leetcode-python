@@ -1,6 +1,7 @@
 from typing import List
 
 
+# 反过来用dict，算diff
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashMap = {}

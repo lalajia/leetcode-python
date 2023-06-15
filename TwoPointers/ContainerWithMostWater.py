@@ -12,6 +12,7 @@ Output: 49
 from typing import List
 
 
+# 想简单点，就是单纯比高度的大小左边大挪右边，右边大挪左边
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         l, r = 0, len(height) - 1

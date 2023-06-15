@@ -10,6 +10,7 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 from typing import List
 
 
+# 用dictionary记录所有字母的出现频率{[1,1,0,0,...0]: ["nat", "tan"], ...} 最后return value
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         res = {}

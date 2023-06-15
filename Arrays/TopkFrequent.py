@@ -8,6 +8,7 @@ from collections import defaultdict
 from typing import List
 
 
+# 用dict把num出现的次数count记录，之后利用list的index越大越靠后list[count] = [num1, num2..]，最后从后面loop这个list，要几个k就先loop List[List],再[List[int]]
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         temp = defaultdict(int)

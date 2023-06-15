@@ -19,6 +19,7 @@ Output
 """
 
 
+# 把stack每一位的最小值存在对应的位置，pop的时候minstack和stack同时pop，这样minstack的最上层永远是对应的最小值
 class Solution:
     def __init__(self) -> None:
         self.stack = []
