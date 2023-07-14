@@ -13,7 +13,8 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         left = 0
         right = len(nums) - 1
-        while left < right:
+        # 等于号很重要！
+        while left <= right:
             # (5-0)/2 = 2
             mid = left + (right - left) // 2
             # print(mid)
@@ -24,7 +25,7 @@ class Solution:
             else:
                 left = mid + 1
 
-        return 0
+        return -1
 
 
 print(Solution().search(nums=[-1, 0, 3, 5, 9, 12], target=9))
