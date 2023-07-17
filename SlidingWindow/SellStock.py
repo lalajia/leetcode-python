@@ -23,7 +23,7 @@ class Solution:
                 left = right
             else:
                 res = max(res, prices[right] - prices[left])
-            right += 1
+            # right += 1
         return res
 
 
