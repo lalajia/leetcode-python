@@ -5,10 +5,11 @@ Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 Explanation: The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped.
 """
-from collections import defaultdict
+
 from typing import List
 
 
+# 分别记录左右最大的值之后，用最大值减去当前位置的height，直到左右重合
 class Solution:
     def trap(self, height: List[int]) -> int:
         l, r = 0, len(height) - 1
@@ -35,7 +36,7 @@ class Solution:
         return res
 
 
-print(Solution().trap(height=[1, 2, 3, 2, 1]))
+print(Solution().trap(height=[1, 0, 3, 0, 0, 1]))
 
 
 # def wasted(self, height: List[int]) -> int:
