@@ -10,6 +10,7 @@ Output: ["((()))","(()())","(())()","()(())","()()()"]
 from typing import List
 
 
+# backtrack走所有的可能性
 class Solution:
     def generateParentheses(self, n: int) -> List[str]:
         stack = []

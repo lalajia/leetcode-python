@@ -19,6 +19,7 @@ Note that no other cars meet these fleets before the destination, so the answer 
 from typing import List
 
 
+# 先把速度和距离dict匹配后，根据距离sort。从后往前比较速度
 class Solution:
     def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
         temp = [[p, s] for p, s in zip(position, speed)]
