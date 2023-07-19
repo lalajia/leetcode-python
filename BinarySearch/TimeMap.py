@@ -30,6 +30,7 @@ timeMap.get("foo", 5);         // return "bar2"
 from collections import defaultdict
 
 
+# value和timestamp变成一个list append到对应的key的dict里。之后根据key进行binary search
 class TimeMap:
     def __init__(self):
         self.keyStore = defaultdict(list)

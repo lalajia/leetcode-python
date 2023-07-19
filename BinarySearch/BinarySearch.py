@@ -9,6 +9,7 @@ Explanation: 9 exists in nums and its index is 4
 from typing import List
 
 
+# 注意细节，等号，mid 的加减
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         left = 0

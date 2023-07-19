@@ -11,6 +11,7 @@ Output: true
 from typing import List
 
 
+# 用mid除得到row，mod得到col，把matrix想象成一条array
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         row = len(matrix)

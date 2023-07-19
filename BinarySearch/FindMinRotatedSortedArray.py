@@ -16,15 +16,9 @@ Explanation: The original array was [1,2,3,4,5] rotated 3 times.
 from typing import List
 
 
+# 分类：mid小于右边，最小值在左边或者中间（12345，45123），mid大于右边，最小值在右边（34512）
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        # while left <= right:
-        #     mid = left + (right - left) // 2
-        #     # print(mid)
-        #     if (nums[left] <= nums[mid]) and (nums[mid] < nums[right]):
-        #         right = mid
-        #     elif (nums[mid] < nums[right]) and (nums[left] > nums[mid]):
-        #         left = mid + 1
         left = 0
         right = len(nums) - 1
 

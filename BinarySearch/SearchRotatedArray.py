@@ -9,6 +9,7 @@ Output: 4
 from typing import List
 
 
+# 分类很重要！分为mid前面的数组是有顺序的上升，或者mid后面的数组是有顺序的上升，再分别确定target是否在
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         left = 0
