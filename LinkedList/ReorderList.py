@@ -34,7 +34,7 @@ class Solution:
         fast = head.next
 
         while fast and fast.next:
-            slow = slow.next
+            slow = slow.next  # type: ignore
             fast = fast.next.next
 
         def reversedList(self, head: Optional[ListNode]) -> Optional[ListNode]:
@@ -59,8 +59,8 @@ class Solution:
 
             return None
 
-        list2 = reversedList(self, head=slow.next)
-        slow.next = None
+        list2 = reversedList(self, head=slow.next)  # type: ignore
+        slow.next = None  # type: ignore
 
         mergeList(self, list1=head, list2=list2)
 
