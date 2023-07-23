@@ -12,6 +12,7 @@ Output: false
 """
 
 
+# 把s1字母出现的次数放到int array里面。右指针loop s2，右指针出现的字母在减去int array。while loop如果该字母s1里面没有的话，把当前左指针的字母再加回去，左指针+1。最后如果左右指针和s1的长度相同，return True
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
         temp = [0] * 26

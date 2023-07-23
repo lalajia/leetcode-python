@@ -10,6 +10,7 @@ Explanation: The answer is "abc", with the length of 3.
 from typing import Set
 
 
+# 用set，用右指针loop s，在for loop里面先用while查看右指针的字母是否在set里，在的话挪左指针；出while后加set，记录最大的长度
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         temp = set()

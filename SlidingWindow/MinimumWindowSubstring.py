@@ -9,6 +9,7 @@ Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from
 """
 
 
+# 和longest repeat有点像，记录t的所有字母出现的次数；用右指针loop s，首先记录如果有与t相同的字母出现，have+1。当have=t当长度时，记录下更大的结果的长度和位置，如果当前左指针是t中的字母，have-1，挪动左指针
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         left, right = 0, 0

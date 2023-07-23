@@ -13,6 +13,7 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 from typing import List
 
 
+# 当右指针小于左指针，左指针=右指针，记录最低点，然后记录最大值
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         left, right = 0, 1
@@ -27,4 +28,4 @@ class Solution:
         return res
 
 
-print(Solution().maxProfit(prices=[7, 1, 0, 3, 6, 4]))
+print(Solution().maxProfit(prices=[0, 3]))
