@@ -11,6 +11,7 @@ from typing import List
 import math
 
 
+# 创建一个array从1到piles里面最大的数，binary search算每一个mid的h，如果比要求的h大，就变left；比要求的小，记录下来min，然后挪右边。
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         # res = max(piles)
